@@ -40,7 +40,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYb-Mh-huj">
-                        <rect key="frame" x="30" y="823.5" width="732" height="238.5"/>
+                        <rect key="frame" x="30" y="834" width="732" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1mZ-4h-9cz"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -51,27 +54,48 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOl-Zd-M0q">
+                        <rect key="frame" x="130" y="784" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="YMH-rQ-bP8"/>
+                            <constraint firstAttribute="width" constant="40" id="ucU-yU-xho"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="speechBalloon"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jno-w6-wOr">
+                        <rect key="frame" x="30" y="864" width="732" height="198"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="AOl-Zd-M0q" firstAttribute="top" secondItem="OVh-Oy-8JN" secondAttribute="bottom" constant="11" id="2AZ-0h-u2D"/>
                     <constraint firstItem="gVH-WP-MkY" firstAttribute="top" secondItem="OVh-Oy-8JN" secondAttribute="bottom" constant="10" id="FvQ-fC-g6N"/>
-                    <constraint firstItem="BYb-Mh-huj" firstAttribute="top" secondItem="Sup-xx-l3l" secondAttribute="bottom" constant="10" id="IfS-6N-Mfz"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="BYb-Mh-huj" secondAttribute="bottom" constant="10" id="RBe-VL-TK8"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BYb-Mh-huj" secondAttribute="trailing" constant="10" id="RQG-rz-mUG"/>
                     <constraint firstItem="OVh-Oy-8JN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="RhR-6H-n7h"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Sup-xx-l3l" secondAttribute="trailing" constant="10" id="RyU-xE-RvA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="OVh-Oy-8JN" secondAttribute="trailing" id="U85-Wg-Xxa"/>
+                    <constraint firstItem="BYb-Mh-huj" firstAttribute="top" secondItem="AOl-Zd-M0q" secondAttribute="bottom" constant="10" id="Uff-UM-6SO"/>
                     <constraint firstItem="BYb-Mh-huj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="V25-V3-JlT"/>
+                    <constraint firstItem="Jno-w6-wOr" firstAttribute="top" secondItem="BYb-Mh-huj" secondAttribute="bottom" constant="10" id="akG-mI-OBY"/>
                     <constraint firstItem="hbK-B7-5Vw" firstAttribute="leading" secondItem="gVH-WP-MkY" secondAttribute="trailing" constant="10" id="dh0-S9-aix"/>
                     <constraint firstItem="gVH-WP-MkY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="iMy-zE-d3G"/>
+                    <constraint firstItem="AOl-Zd-M0q" firstAttribute="leading" secondItem="hbK-B7-5Vw" secondAttribute="trailing" constant="10" id="iiW-Lx-Fmo"/>
                     <constraint firstItem="hbK-B7-5Vw" firstAttribute="centerY" secondItem="gVH-WP-MkY" secondAttribute="centerY" id="kbc-SU-s4A"/>
+                    <constraint firstItem="Jno-w6-wOr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="pKK-Dq-fv6"/>
                     <constraint firstItem="OVh-Oy-8JN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="rbb-bD-xbb"/>
                     <constraint firstItem="Sup-xx-l3l" firstAttribute="leading" secondItem="hbK-B7-5Vw" secondAttribute="trailing" constant="10" id="sNV-Tc-iAP"/>
                     <constraint firstItem="Sup-xx-l3l" firstAttribute="centerY" secondItem="gVH-WP-MkY" secondAttribute="centerY" id="vfA-Pj-9GJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jno-w6-wOr" secondAttribute="bottom" constant="10" id="w84-ke-rpf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jno-w6-wOr" secondAttribute="trailing" constant="10" id="ySe-Ng-7gK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="BYb-Mh-huj" id="oIQ-Eo-kSg"/>
+                <outlet property="commentButton" destination="AOl-Zd-M0q" id="ccS-rX-jGf"/>
+                <outlet property="commentLabel" destination="Jno-w6-wOr" id="8aQ-cG-WKr"/>
                 <outlet property="dateLabel" destination="Sup-xx-l3l" id="TWC-MP-gYN"/>
                 <outlet property="likeButton" destination="gVH-WP-MkY" id="byL-Cm-rVW"/>
                 <outlet property="likeLabel" destination="hbK-B7-5Vw" id="C9R-IH-CKy"/>
@@ -82,5 +106,6 @@
     </objects>
     <resources>
         <image name="like_none" width="40" height="40"/>
+        <image name="speechBalloon" width="40" height="40"/>
     </resources>
 </document>

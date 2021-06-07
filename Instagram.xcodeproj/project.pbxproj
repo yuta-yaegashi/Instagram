@@ -23,6 +23,7 @@
 		785A62322661150700A41190 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785A62312661150700A41190 /* PostData.swift */; };
 		785A623A2661165600A41190 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785A62382661165600A41190 /* PostTableViewCell.swift */; };
 		785A623B2661165600A41190 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785A62392661165600A41190 /* PostTableViewCell.xib */; };
+		78E979E42664FE3B00658B8B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E979E32664FE3B00658B8B /* CommentViewController.swift */; };
 		AD0A7CEB0B6B81C11F85A633 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E11260CC480EDE6677CDDC0 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		785A62312661150700A41190 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		785A62382661165600A41190 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		785A62392661165600A41190 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		78E979E32664FE3B00658B8B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		83FDEF1D2806CE8151C39EA6 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				785A62312661150700A41190 /* PostData.swift */,
 				785A62382661165600A41190 /* PostTableViewCell.swift */,
 				785A62392661165600A41190 /* PostTableViewCell.xib */,
+				78E979E32664FE3B00658B8B /* CommentViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				78357E59265E7BBA0092D2F9 /* ImageSelectViewController.swift in Sources */,
 				78357E64265E84610092D2F9 /* TabBarController.swift in Sources */,
 				78357E56265E7B840092D2F9 /* HomeViewController.swift in Sources */,
+				78E979E42664FE3B00658B8B /* CommentViewController.swift in Sources */,
 				78357E5D265E7BD00092D2F9 /* PostViewController.swift in Sources */,
 				78357E60265E7BFE0092D2F9 /* SettingViewController.swift in Sources */,
 				785A62322661150700A41190 /* PostData.swift in Sources */,
